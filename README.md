@@ -1,6 +1,6 @@
 # Amenaza
 
-**An atmospheric survival thriller set in a darkened neoclassical city on the brink of a total power grid collapse.**
+**An atmospheric survival thriller set in a darkened neoclassical city facing an imminent threat.**
 
 *Entry for the **2026 Luanti Game Jam** (built for Luanti 5.18.0).*
 
@@ -8,16 +8,15 @@
 
 ## Overview & Core Objective
 
-You arrive at dawn in the Grand Central Plaza of a vast, walled neoclassical city. Street lanterns are sputtering, building windows are surging in rolling brownout waves, and a restless crowd is protesting a **rogue AI mainframe** draining the entire power grid.
+You arrive at dawn in the Grand Central Plaza of a vast, walled neoclassical city. Something is wrong—an uneasy crowd has gathered, the city feels on edge, and a looming threat hangs over everyone.
 
-You have **7 minutes** before total grid collapse:
+Your task is to uncover what is happening and stop the threat before time runs out:
 
-1. **Talk to the crowd:** Right-click (or punch) distinctive protesters in the plaza and streets. The first speaker explains the crisis; every other speaker gives you live **compass directions and distance** to the AI Data Center.
-2. **Follow the power trail:** Use your top-right **HUD Compass** and follow the heavy **yellow-striped power conduits** laid along the main boulevards.
-3. **Shut down the Mainframe Core:** Locate the dark fortified **AI Data Center** (marked by a glowing red warning beacon above its entrance), navigate through the server halls, and **right-click or punch the Mainframe Core** to pull the plug and restore the city.
-4. **Survive the Blackout:** If the 7-minute timer runs out before you shut down the core, the city plunges into pitch darkness and the panicked crowd turns hostile. Falling in the dark places you in **Spectator Mode** so you can fly freely over the aftermath.
+1. **Talk to the crowd:** Right-click (or punch) people in the plaza and streets to learn what is going on and gather leads on where to go.
+2. **Explore and navigate:** Use your top-right **HUD Compass** and pay attention to visual and environmental clues throughout the city.
+3. **Act before it's too late:** Time is limited—find the source of the threat and stop it before the situation spirals out of control.
 
-There is no inventory, crafting, or block-breaking—only exploration, navigation, and survival against the clock.
+There is no inventory, crafting, or block-breaking—only exploration, investigation, and survival against the clock.
 
 ---
 
@@ -30,7 +29,7 @@ There is no inventory, crafting, or block-breaking—only exploration, navigatio
 | Move | `W` `A` `S` `D` |
 | Jump | `Space` |
 | Sneak | `Shift` |
-| Talk to Protesters / Shut Down Mainframe Core | `Right-Click` or `Left-Click` (Punch) |
+| Talk to NPCs / Interact | `Right-Click` or `Left-Click` (Punch) |
 | Fly (Spectator Mode after Game Over) | `K` (toggle fly), `Space` (up), `Shift` (down) |
 
 ### Player Chat Commands
@@ -45,8 +44,9 @@ There is no inventory, crafting, or block-breaking—only exploration, navigatio
 
 | Command | Description |
 |---|---|
-| `/amenaza_blackout` | Immediately trigger the citywide blackout and riot phase. |
-| `/amenaza_reset` | Reset the session back to Dawn, clear rioters, and respawn the starting plaza crowd. |
+| `/amenaza_daylight [on\|off]` | Toggle a bright daylight sky and lighting override (for screenshots and visual inspection). |
+| `/amenaza_blackout` | Immediately trigger the late-game crisis phase (for testing). |
+| `/amenaza_reset` | Reset the session back to the start and respawn the starting plaza crowd. |
 
 ---
 
@@ -63,8 +63,8 @@ There is no inventory, crafting, or block-breaking—only exploration, navigatio
 ### Optional Settings (`settingtypes.txt`)
 
 You can tune gameplay parameters in Luanti's **Settings → All Settings → Games → Amenaza**:
-- `amenaza_blackout_seconds` (default `420`): Countdown duration in seconds before the blackout triggers.
-- `amenaza_crowd_size` (default `84`): Target number of protesters in the starting plaza.
+- `amenaza_blackout_seconds` (default `420`): Countdown duration in seconds before the threat escalates.
+- `amenaza_crowd_size` (default `84`): Target number of people in the starting plaza.
 - `amenaza_city_crowd_size` (default `90`): Target number of roaming and standing NPCs around the player across the city.
 - `amenaza_language` (default `auto`): Default language override (`auto`, `en`, `es`).
 

@@ -14,3 +14,7 @@ Current state is already: @1=El estado actual ya es: @1
 Blackout triggered.=Apagón activado.
 Reset Amenaza session back to Dawn=Reiniciar la sesión de Amenaza al amanecer
 Session reset to Dawn.=Sesión reiniciada al amanecer.
+Toggle bright daylight override (for screenshots)=Alternar luz diurna brillante (para capturas de pantalla)
+Invalid option '@1'. Usage: /amenaza_daylight [on|off]=Opción inválida '@1'. Uso: /amenaza_daylight [on|off]
+Daylight override enabled.=Luz diurna activada.
+Daylight override disabled; normal lighting restored.=Luz diurna desactivada; iluminación normal restaurada.

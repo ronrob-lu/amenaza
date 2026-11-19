@@ -60,6 +60,7 @@ local spectators = {}
 local overlay_huds = {}
 local server_hum_handles = {}
 local player_anim_state = {}
+local daylight_override = false
 
 local PLAYER_ANIMS = {
     stand     = { range = { x = 0,   y = 79  }, speed = 30 },
@@ -169,7 +170,7 @@ local DAWN_BASE_LIGHT_RATIO = 0.22
 amenaza_core.DAWN_BASE_LIGHT_RATIO = DAWN_BASE_LIGHT_RATIO
 
 function amenaza_core.set_dawn_ambient_ratio(ratio)
-    if game_state ~= "dawn" then return end
+    if daylight_override or game_state ~= "dawn" then return end
     local r = math.max(0.08, math.min(0.45, ratio or DAWN_BASE_LIGHT_RATIO))
     for _, player in ipairs(minetest.get_connected_players()) do
         player:override_day_night_ratio(r)
@@ -178,6 +179,36 @@ end
 
 local function apply_atmosphere(player)
     if not player or not player:is_player() then return end
+
+    if daylight_override then
+        minetest.set_timeofday(0.42)
+        player:override_day_night_ratio(1.0)
+        player:set_sky({
+            type = "regular",
+            clouds = true,
+            sky_color = {
+                day_sky = "#6ea8e5",
+                day_horizon = "#b8d7f5",
+                dawn_sky = "#7ab0e8",
+                dawn_horizon = "#d2e5f8",
+                night_sky = "#6ea8e5",
+                night_horizon = "#b8d7f5",
+                indoors = "#8899aa",
+            },
+        })
+        player:set_clouds({
+            density = 0.35,
+            color = "#f2f6fc",
+            ambient = "#c8d4e6",
+            height = 110,
+            thickness = 12,
+            speed = { x = 1.5, z = 0.5 },
+        })
+        player:set_sun({ visible = true, scale = 1.0 })
+        player:set_moon({ visible = false })
+        player:set_stars({ visible = false })
+        return
+    end
 
     if game_state == "dawn" then
         minetest.set_timeofday(0.205)
@@ -717,6 +748,35 @@ minetest.register_chatcommand("amenaza_blackout", {
     end,
 })
 
+minetest.register_chatcommand("amenaza_daylight", {
+    params = "[on|off]",
+    description = S("Toggle bright daylight override (for screenshots)"),
+    privs = { server = true },
+    func = function(caller_name, param)
+        local arg = (param or ""):lower():match("^%s*(.-)%s*$")
+        if arg == "" then
+            daylight_override = not daylight_override
+        elseif arg == "on" or arg == "1" or arg == "true" or arg == "day" then
+            daylight_override = true
+        elseif arg == "off" or arg == "0" or arg == "false" or arg == "normal" then
+            daylight_override = false
+        else
+            return false, amenaza_core.localize(
+                caller_name,
+                S("Invalid option '@1'. Usage: /amenaza_daylight [on|off]", arg)
+            )
+        end
+
+        apply_atmosphere_all()
+
+        if daylight_override then
+            return true, amenaza_core.localize(caller_name, S("Daylight override enabled."))
+        else
+            return true, amenaza_core.localize(caller_name, S("Daylight override disabled; normal lighting restored."))
+        end
+    end,
+})
+
 minetest.register_chatcommand("amenaza_reset", {
     description = S("Reset Amenaza session back to Dawn"),
     privs = { server = true },
@@ -724,6 +784,7 @@ minetest.register_chatcommand("amenaza_reset", {
         game_state = "dawn"
         elapsed_time = 0
         dialogue_used = false
+        daylight_override = false
         save_state()
 
         local spawn = (amenaza_mapgen and amenaza_mapgen.SPAWN_POS) or { x = 0, y = 2, z = -28 }
