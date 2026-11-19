@@ -10,7 +10,7 @@ Every mod, texture, 3D model, and sound file included in **Amenaza** is listed b
 | `mods/amenaza_mapgen/` | `ronrob-lu` (with AI Gemini 4 Neon) | Original work for Amenaza (2026 Luanti Game Jam) | MIT |
 | `mods/amenaza_nodes/` | `ronrob-lu` (with AI Gemini 4 Neon) | Original work for Amenaza (2026 Luanti Game Jam) | MIT |
 | `mods/amenaza_npcs/` | `ronrob-lu` (with AI Gemini 4 Neon) | Original work for Amenaza; inspired by `ronrob-lu`'s `winkers` and `multitud` mods | MIT |
-| `mods/hud_compass/` | David G (`kestral246`), Spanish locale by `ronrob-lu` | Bundled from [HUD Compass](https://content.luanti.org/packages/kestral/hud_compass/) (`hud_compass`) | MIT |
+| `mods/amenaza_compass/` | David G (`kestral246`), adapted by `ronrob-lu` | Standalone fork of [HUD Compass](https://content.luanti.org/packages/kestral/hud_compass/) (`hud_compass`) | MIT |
 
 ## Menu Branding
 
@@ -29,9 +29,9 @@ Every mod, texture, 3D model, and sound file included in **Amenaza** is listed b
 | `mods/amenaza_npcs/textures/Skin_1.png` .. `Skin_32.png` | 32 | `isaiah658`, `ronrob-lu` | Adapted from `multitud` speaker skin set | CC0 1.0 |
 | `mods/amenaza_npcs/textures/npc_character_1.png` .. `npc_character_100.png` | 100 | `isaiah658`, `ronrob-lu` | From `winkers` / `multitud` civilian skin set | CC0 1.0 |
 | `mods/amenaza_npcs/textures/character.png` | 1 | `celeron55`, `MirceaKitsune`, `Jordach`, et al. | Minetest Game default player skin (`player_api`) | CC BY-SA 3.0 |
-| `mods/hud_compass/textures/realcompass_0.png` .. `realcompass_15.png` | 16 | David G (`kestral246`), based on `tacotexmex` | Bundled with `hud_compass` (derived from `ccompass`) | CC BY-SA 3.0 |
-| `mods/hud_compass/textures/hud_24hr_clock_0.png` .. `hud_24hr_clock_23.png` | 24 | David G (`kestral246`), based on `tacotexmex` | Bundled with `hud_compass` (derived from `realcompass` / `ccompass`) | CC BY-SA 3.0 |
-| `mods/hud_compass/screenshot.png` | 1 | David G (`kestral246`) | Upstream mod documentation screenshot | CC BY-SA 3.0 |
+| `mods/amenaza_compass/textures/amenaza_compass_0.png` .. `amenaza_compass_15.png` | 16 | David G (`kestral246`), based on `tacotexmex` | Adapted from `hud_compass` (`realcompass_*.png`, derived from `ccompass`) | CC BY-SA 3.0 |
+| `mods/amenaza_compass/textures/amenaza_clock_0.png` .. `amenaza_clock_23.png` | 24 | David G (`kestral246`), based on `tacotexmex` | Adapted from `hud_compass` (`hud_24hr_clock_*.png`, derived from `realcompass` / `ccompass`) | CC BY-SA 3.0 |
+| `mods/amenaza_compass/screenshot.png` | 1 | David G (`kestral246`) | Upstream mod documentation screenshot | CC BY-SA 3.0 |
 
 ## 3D Models
 

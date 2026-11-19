@@ -43,7 +43,7 @@ local sign_textures = {
 local crowd_sound_handles = {}
 
 -- ============================================================================
--- Compass Direction Helper (Matches hud_compass: +Z = North, +X = East)
+-- Compass Direction Helper (Matches amenaza_compass: +Z = North, +X = East)
 -- ============================================================================
 
 local function get_compass_direction(from_pos, to_pos)

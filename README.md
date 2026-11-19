@@ -81,7 +81,7 @@ Amenaza is completely free and open-source software with ContentDB-compatible li
 - **NPC Skins (`mods/amenaza_npcs/textures/Skin_*.png`, `npc_character_*.png`):** CC0 1.0 Universal — `isaiah658` and `ronrob-lu`.
 - **Sound Effects (`mods/amenaza_core/sounds/*.ogg`):** CC0 1.0 Universal.
 - **Minetest Default Character Model & Texture (`character.b3d`, `character.png`):** LGPL-2.1-or-later (code) / CC BY-SA 3.0 (media) — Minetest Game contributors.
-- **HUD Compass (`mods/hud_compass`):** MIT License (code) / CC BY-SA 3.0 (textures) — David G (`kestral246`), with compass textures derived from `tacotexmex`'s `ccompass` mod.
+- **HUD Compass (`mods/amenaza_compass`):** MIT License (code) / CC BY-SA 3.0 (textures) — adapted from David G (`kestral246`)'s `hud_compass`, with compass textures derived from `tacotexmex`'s `ccompass` mod.
 
 See [LICENSE](LICENSE) for full license texts and [CREDITS.md](CREDITS.md) for the complete file-by-file attribution table.
 

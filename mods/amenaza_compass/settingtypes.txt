@@ -1,0 +1,6 @@
+# Settings for amenaza_compass (independent of upstream hud_compass).
+#    Define default corner to place compass and whether to use clock.
+#    -1 to -4 = compass only (disabled), -5 to -8 = compass + clock (disabled)
+#    1 to 4 = compass only (enabled), 5 to 8 = compass + clock (enabled)
+#    (default = 1)
+amenaza_compass_default_corner (Default corner to place Amenaza compass) enum 1 -8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
