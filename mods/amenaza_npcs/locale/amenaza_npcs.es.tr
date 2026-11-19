@@ -1,0 +1,15 @@
+# textdomain: amenaza_npcs
+North=Norte
+North-East=Noreste
+East=Este
+South-East=Sureste
+South=Sur
+South-West=Suroeste
+West=Oeste
+North-West=Noroeste
+PROTESTER=MANIFESTANTE
+PROTESTER — DIRECTIONS=MANIFESTANTE — INDICACIONES
+Close=Cerrar
+"We're out here because that rogue AI is bleeding the entire city's power grid dry. Look at the street lamps—the whole grid is about to collapse into a total blackout.@n@nEveryone in this plaza shouts and waves signs, demanding someone shut it down... but not a single person in this whole crowd has the courage to actually go find the main computer and pull the plug."="Estamos aquí porque esa IA rebelde está agotando por completo la red eléctrica de toda la ciudad. Mira las farolas: toda la red está a punto de colapsar en un apagón total.@n@nTodos en esta plaza gritan y agitan carteles exigiendo que alguien la apague... pero ni una sola persona en toda esta multitud tiene el valor de ir a buscar la computadora principal y desconectarla."
+"You're almost right on top of it! Look @1—the fortified dark bunker with the red warning beacon and cooling vents is just @2 meters away. Get inside and shut down the Mainframe Core before the grid dies!"="¡Ya casi estás encima! Mira hacia el @1: el búnker oscuro fortificado con la baliza roja de advertencia y las rejillas de ventilación está a solo @2 metros. ¡Entra y apaga el Núcleo Central antes de que muera la red!"
+"You're actually going to shut down the AI? Check your compass and head @1—the Data Center is roughly @2 meters from here.@n@nYou can also follow the heavy yellow-striped power cables laid along the main streets. Look for the dark fortified bunker with the glowing red beacon over its entrance. Hurry!"="¿De verdad vas a apagar la IA? Mira tu brújula y dirígete hacia el @1: el Centro de Datos está a unos @2 metros de aquí.@n@nTambién puedes seguir los gruesos cables eléctricos con franjas amarillas tendidos por las calles principales. Busca el búnker oscuro fortificado con la baliza roja brillante sobre la entrada. ¡Date prisa!"

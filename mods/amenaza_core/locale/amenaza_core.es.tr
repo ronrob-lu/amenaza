@@ -1,0 +1,16 @@
+# textdomain: amenaza_core
+GAME OVER=FIN DEL JUEGO
+You fell in the darkness. Fly freely in Spectator Mode to observe the city.=Caíste en la oscuridad. Vuela libremente en Modo Espectador para observar la ciudad.
+VICTORY — SYSTEM SHUT DOWN=VICTORIA — SISTEMA APAGADO
+The rogue mainframe is offline. Power has been restored across the city.=La computadora central rebelde está desconectada. Se ha restablecido la energía en toda la ciudad.
+Current language: @1. Usage: /idioma [auto|es|en] or /lang [auto|es|en]=Idioma actual: @1. Uso: /idioma [auto|es|en] o /lang [auto|es|en]
+Invalid language '@1'. Use: auto, es, or en.=Idioma inválido '@1'. Usa: auto, es o en.
+Language set to Spanish.=Idioma cambiado a español.
+Language set to English.=Idioma cambiado a inglés.
+Language set to automatic (client locale).=Idioma configurado en automático (idioma del cliente).
+Change game language (auto, es, en)=Cambiar el idioma del juego (auto, es, en)
+Immediately trigger the citywide blackout phase=Activar inmediatamente la fase de apagón en toda la ciudad
+Current state is already: @1=El estado actual ya es: @1
+Blackout triggered.=Apagón activado.
+Reset Amenaza session back to Dawn=Reiniciar la sesión de Amenaza al amanecer
+Session reset to Dawn.=Sesión reiniciada al amanecer.
