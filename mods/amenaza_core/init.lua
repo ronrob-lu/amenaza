@@ -331,9 +331,11 @@ local function show_banner(player, title, subtitle, color_hex)
     clear_overlays(player)
     local name = player:get_player_name()
     local ids = {}
+    local hud_type_key = (minetest.has_feature and minetest.has_feature("hud_def_type_field"))
+        and "type" or "hud_elem_type"
 
-    table.insert(ids, player:hud_add({
-        hud_elem_type = "text",
+    local title_def = {
+        [hud_type_key] = "text",
         position = { x = 0.5, y = 0.36 },
         alignment = { x = 0, y = 0 },
         text = amenaza_core.localize(player, title),
@@ -341,18 +343,20 @@ local function show_banner(player, title, subtitle, color_hex)
         scale = { x = 100, y = 100 },
         size = { x = 3, y = 3 },
         style = 1,
-    }))
+    }
+    table.insert(ids, player:hud_add(title_def))
 
     if subtitle and subtitle ~= "" then
-        table.insert(ids, player:hud_add({
-            hud_elem_type = "text",
+        local sub_def = {
+            [hud_type_key] = "text",
             position = { x = 0.5, y = 0.46 },
             alignment = { x = 0, y = 0 },
             text = amenaza_core.localize(player, subtitle),
             number = 0xE8ECEF,
             scale = { x = 100, y = 100 },
             size = { x = 1.3, y = 1.3 },
-        }))
+        }
+        table.insert(ids, player:hud_add(sub_def))
     end
 
     overlay_huds[name] = ids
