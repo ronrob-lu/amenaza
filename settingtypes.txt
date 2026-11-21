@@ -7,5 +7,5 @@ amenaza_crowd_size (Starting plaza crowd size) int 84 16 180
 # Target number of walking and standing people around the player across the city.
 amenaza_city_crowd_size (City street crowd size) int 90 20 180
 
-# Language override for Amenaza (auto follows the client language; en = English, es = Español).
-amenaza_language (Game language) enum auto auto,en,es
+# Language override for Amenaza (auto follows the client language; en = English, es = Español, pt = Português, de = Deutsch).
+amenaza_language (Game language) enum auto auto,en,es,pt,de

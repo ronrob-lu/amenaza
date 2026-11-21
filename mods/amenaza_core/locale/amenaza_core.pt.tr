@@ -1,0 +1,22 @@
+# textdomain: amenaza_core
+GAME OVER=FIM DE JOGO
+You fell in the darkness. Fly freely in Spectator Mode to observe the city.=Você caiu na escuridão. Voe livremente no Modo Espectador para observar a cidade.
+VICTORY — SYSTEM SHUT DOWN=VITÓRIA — SISTEMA DESLIGADO
+The rogue mainframe is offline. Power has been restored across the city.=O computador central rebelde foi desconectado. A energia foi restabelecida em toda a cidade.
+Current language: @1. Usage: /idioma [auto|en|es|pt|de] or /lang [auto|en|es|pt|de]=Idioma atual: @1. Uso: /idioma [auto|en|es|pt|de] ou /lang [auto|en|es|pt|de]
+Invalid language '@1'. Use: auto, en, es, pt, or de.=Idioma inválido '@1'. Use: auto, en, es, pt ou de.
+Language set to Spanish.=Idioma alterado para espanhol.
+Language set to English.=Idioma alterado para inglês.
+Language set to Portuguese.=Idioma alterado para português.
+Language set to German.=Idioma alterado para alemão.
+Language set to automatic (client locale).=Idioma definido como automático (idioma do cliente).
+Change game language (auto, en, es, pt, de)=Alterar o idioma do jogo (auto, en, es, pt, de)
+Immediately trigger the citywide blackout phase=Ativar imediatamente a fase de apagão em toda a cidade
+Current state is already: @1=O estado atual já é: @1
+Blackout triggered.=Apagão ativado.
+Reset Amenaza session back to Dawn=Reiniciar a sessão de Amenaza para o amanhecer
+Session reset to Dawn.=Sessão reiniciada para o amanhecer.
+Toggle bright daylight override (for screenshots)=Alternar luz do dia intensa (para capturas de tela)
+Invalid option '@1'. Usage: /amenaza_daylight [on|off]=Opção inválida '@1'. Uso: /amenaza_daylight [on|off]
+Daylight override enabled.=Luz do dia forçada ativada.
+Daylight override disabled; normal lighting restored.=Luz do dia forçada desativada; iluminação normal restaurada.

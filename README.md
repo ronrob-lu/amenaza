@@ -36,8 +36,8 @@ There is no inventory, crafting, or block-breaking—only exploration, investiga
 
 | Command | Description |
 |---|---|
-| `/idioma [auto\|es\|en]` | Switch game language between automatic client locale, Spanish (`es`), and English (`en`). |
-| `/lang [auto\|es\|en]` | Alias for `/idioma`. |
+| `/idioma [auto\|en\|es\|pt\|de]` | Switch game language between automatic client locale, English (`en`), Spanish (`es`), Portuguese (`pt`), and German (`de`). |
+| `/lang [auto\|en\|es\|pt\|de]` | Alias for `/idioma`. |
 | `/compass [0-8]` | Toggle or reposition the HUD compass (`0` = off, `1–4` = compass only in NE/SE/SW/NW corner, `5–8` = compass + 24h clock). |
 
 ### Server / Testing Commands (requires `server` privilege)
@@ -66,7 +66,7 @@ You can tune gameplay parameters in Luanti's **Settings → All Settings → Gam
 - `amenaza_blackout_seconds` (default `420`): Countdown duration in seconds before the threat escalates.
 - `amenaza_crowd_size` (default `84`): Target number of people in the starting plaza.
 - `amenaza_city_crowd_size` (default `90`): Target number of roaming and standing NPCs around the player across the city.
-- `amenaza_language` (default `auto`): Default language override (`auto`, `en`, `es`).
+- `amenaza_language` (default `auto`): Default language override (`auto`, `en`, `es`, `pt`, `de`).
 
 ---
 

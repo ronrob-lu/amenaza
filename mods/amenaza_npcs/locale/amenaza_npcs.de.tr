@@ -1,0 +1,15 @@
+# textdomain: amenaza_npcs
+North=Norden
+North-East=Nordosten
+East=Osten
+South-East=Südosten
+South=Süden
+South-West=Südwesten
+West=Westen
+North-West=Nordwesten
+PROTESTER=DEMONSTRANT
+PROTESTER — DIRECTIONS=DEMONSTRANT — WEGBESCHREIBUNG
+Close=Schließen
+"We're out here because that rogue AI is bleeding the entire city's power grid dry. Look at the street lamps—the whole grid is about to collapse into a total blackout.@n@nEveryone in this plaza shouts and waves signs, demanding someone shut it down... but not a single person in this whole crowd has the courage to actually go find the main computer and pull the plug."="Wir sind hier draußen, weil diese abtrünnige KI das gesamte Stromnetz der Stadt leersaugt. Schau dir die Straßenlaternen an – das ganze Netz steht kurz vor einem totalen Blackout.@n@nAlle auf diesem Platz schreien, schwenken Schilder und fordern, dass jemand sie abschaltet ... aber nicht eine einzige Person in dieser ganzen Menge hat den Mut, tatsächlich den Hauptrechner zu suchen und den Stecker zu ziehen."
+"You're almost right on top of it! Look @1—the fortified dark bunker with the red warning beacon and cooling vents is just @2 meters away. Get inside and shut down the Mainframe Core before the grid dies!"="Du bist schon fast direkt davor! Schau Richtung @1 – der befestigte dunkle Bunker mit dem roten Warnlicht und den Lüftungsschächten ist nur @2 Meter entfernt. Geh rein und schalte den Zentralrechner-Kern ab, bevor das Netz zusammenbricht!"
+"You're actually going to shut down the AI? Check your compass and head @1—the Data Center is roughly @2 meters from here.@n@nYou can also follow the heavy yellow-striped power cables laid along the main streets. Look for the dark fortified bunker with the glowing red beacon over its entrance. Hurry!"="Du willst die KI wirklich abschalten? Schau auf deinen Kompass und geh Richtung @1 – das Rechenzentrum ist ungefähr @2 Meter von hier entfernt.@n@nDu kannst auch den dicken gelb gestreiften Stromkabeln folgen, die entlang der Hauptstraßen verlegt sind. Halte Ausschau nach dem dunklen, befestigten Bunker mit dem rot leuchtenden Warnlicht über dem Eingang. Beeil dich!"

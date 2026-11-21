@@ -1,0 +1,22 @@
+# textdomain: amenaza_core
+GAME OVER=SPIEL VORBEI
+You fell in the darkness. Fly freely in Spectator Mode to observe the city.=Du bist in der Dunkelheit gefallen. Fliege frei im Zuschauermodus, um die Stadt zu beobachten.
+VICTORY — SYSTEM SHUT DOWN=SIEG — SYSTEM ABGESCHALTET
+The rogue mainframe is offline. Power has been restored across the city.=Der abtrünnige Zentralrechner ist offline. Die Stromversorgung in der gesamten Stadt wurde wiederhergestellt.
+Current language: @1. Usage: /idioma [auto|en|es|pt|de] or /lang [auto|en|es|pt|de]=Aktuelle Sprache: @1. Verwendung: /idioma [auto|en|es|pt|de] oder /lang [auto|en|es|pt|de]
+Invalid language '@1'. Use: auto, en, es, pt, or de.=Ungültige Sprache '@1'. Verwende: auto, en, es, pt oder de.
+Language set to Spanish.=Sprache auf Spanisch eingestellt.
+Language set to English.=Sprache auf Englisch eingestellt.
+Language set to Portuguese.=Sprache auf Portugiesisch eingestellt.
+Language set to German.=Sprache auf Deutsch eingestellt.
+Language set to automatic (client locale).=Sprache auf automatisch (Client-Sprache) eingestellt.
+Change game language (auto, en, es, pt, de)=Spielsprache ändern (auto, en, es, pt, de)
+Immediately trigger the citywide blackout phase=Stadtweite Blackout-Phase sofort auslösen
+Current state is already: @1=Der aktuelle Zustand ist bereits: @1
+Blackout triggered.=Blackout ausgelöst.
+Reset Amenaza session back to Dawn=Amenaza-Sitzung auf Morgengrauen zurücksetzen
+Session reset to Dawn.=Sitzung auf Morgengrauen zurückgesetzt.
+Toggle bright daylight override (for screenshots)=Helle Tageslicht-Überschreibung umschalten (für Screenshots)
+Invalid option '@1'. Usage: /amenaza_daylight [on|off]=Ungültige Option '@1'. Verwendung: /amenaza_daylight [on|off]
+Daylight override enabled.=Tageslicht-Überschreibung aktiviert.
+Daylight override disabled; normal lighting restored.=Tageslicht-Überschreibung deaktiviert; normale Beleuchtung wiederhergestellt.

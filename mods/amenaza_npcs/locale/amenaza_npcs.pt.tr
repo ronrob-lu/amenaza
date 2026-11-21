@@ -1,0 +1,15 @@
+# textdomain: amenaza_npcs
+North=Norte
+North-East=Nordeste
+East=Leste
+South-East=Sudeste
+South=Sul
+South-West=Sudoeste
+West=Oeste
+North-West=Noroeste
+PROTESTER=MANIFESTANTE
+PROTESTER — DIRECTIONS=MANIFESTANTE — DIREÇÕES
+Close=Fechar
+"We're out here because that rogue AI is bleeding the entire city's power grid dry. Look at the street lamps—the whole grid is about to collapse into a total blackout.@n@nEveryone in this plaza shouts and waves signs, demanding someone shut it down... but not a single person in this whole crowd has the courage to actually go find the main computer and pull the plug."="Estamos aqui porque essa IA rebelde está esgotando completamente a rede elétrica de toda a cidade. Olhe para os postes de luz — toda a rede está prestes a colapsar em um apagão total.@n@nTodos nesta praça gritam e agitam cartazes exigindo que alguém a desligue... mas nem uma única pessoa em toda esta multidão tem a coragem de ir encontrar o computador principal e puxar a tomada."
+"You're almost right on top of it! Look @1—the fortified dark bunker with the red warning beacon and cooling vents is just @2 meters away. Get inside and shut down the Mainframe Core before the grid dies!"="Você já está quase em cima! Olhe para o @1 — o bunker escuro fortificado com o sinalizador vermelho de alerta e as grades de ventilação está a apenas @2 metros de distância. Entre e desligue o Núcleo Central antes que a rede morra!"
+"You're actually going to shut down the AI? Check your compass and head @1—the Data Center is roughly @2 meters from here.@n@nYou can also follow the heavy yellow-striped power cables laid along the main streets. Look for the dark fortified bunker with the glowing red beacon over its entrance. Hurry!"="Você vai mesmo desligar a IA? Confira sua bússola e siga para o @1 — o Centro de Dados fica a cerca de @2 metros daqui.@n@nVocê também pode seguir os grossos cabos de energia com listras amarelas estendidos pelas ruas principais. Procure o bunker escuro fortificado com o sinalizador vermelho brilhante sobre a entrada. Depressa!"

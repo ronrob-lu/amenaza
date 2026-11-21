@@ -11,9 +11,16 @@ local BLACKOUT_SECONDS = tonumber(minetest.settings:get("amenaza_blackout_second
 -- Localization Helpers (Auto client locale + optional /idioma or setting override)
 -- ============================================================================
 
+local SUPPORTED_LANGS = {
+    en = true,
+    es = true,
+    pt = true,
+    de = true,
+}
+
 local function get_default_language()
     local cfg = minetest.settings:get("amenaza_language") or "auto"
-    if cfg == "es" or cfg == "en" then
+    if SUPPORTED_LANGS[cfg] then
         return cfg
     end
     return "auto"
@@ -24,7 +31,7 @@ function amenaza_core.get_player_language(player_or_name)
         or (player_or_name and player_or_name:is_player() and player_or_name:get_player_name())
     if pname and pname ~= "" then
         local saved = storage:get_string("lang_" .. pname)
-        if saved == "es" or saved == "en" or saved == "auto" then
+        if SUPPORTED_LANGS[saved] or saved == "auto" then
             return saved
         end
     end
@@ -32,7 +39,7 @@ function amenaza_core.get_player_language(player_or_name)
 end
 
 function amenaza_core.set_player_language(player_name, lang)
-    if lang == "es" or lang == "en" or lang == "auto" then
+    if SUPPORTED_LANGS[lang] or lang == "auto" then
         storage:set_string("lang_" .. player_name, lang)
         return true
     end
@@ -41,7 +48,7 @@ end
 
 function amenaza_core.localize(player_or_name, translated_str)
     local lang = amenaza_core.get_player_language(player_or_name)
-    if (lang == "es" or lang == "en") and minetest.get_translated_string then
+    if SUPPORTED_LANGS[lang] and minetest.get_translated_string then
         return minetest.get_translated_string(lang, translated_str)
     end
     return translated_str
@@ -676,17 +683,21 @@ local function handle_language_command(caller_name, param)
         local cur = amenaza_core.get_player_language(caller_name)
         return true, amenaza_core.localize(
             caller_name,
-            S("Current language: @1. Usage: /idioma [auto|es|en] or /lang [auto|es|en]", cur)
+            S("Current language: @1. Usage: /idioma [auto|en|es|pt|de] or /lang [auto|en|es|pt|de]", cur)
         )
     end
-    if arg == "es" or arg == "español" or arg == "espanol" or arg == "spanish" then
+    if arg == "es" or arg == "español" or arg == "espanol" or arg == "spanish" or arg == "espanhol" or arg == "spanisch" then
         arg = "es"
-    elseif arg == "en" or arg == "english" or arg == "ingles" or arg == "inglés" then
+    elseif arg == "en" or arg == "english" or arg == "ingles" or arg == "inglés" or arg == "inglês" or arg == "englisch" then
         arg = "en"
+    elseif arg == "pt" or arg == "pt-br" or arg == "pt_br" or arg == "pt-pt" or arg == "pt_pt" or arg == "portuguese" or arg == "portugues" or arg == "português" or arg == "portugiesisch" then
+        arg = "pt"
+    elseif arg == "de" or arg == "german" or arg == "deutsch" or arg == "aleman" or arg == "alemán" or arg == "alemão" or arg == "alemao" then
+        arg = "de"
     elseif arg ~= "auto" then
         return false, amenaza_core.localize(
             caller_name,
-            S("Invalid language '@1'. Use: auto, es, or en.", arg)
+            S("Invalid language '@1'. Use: auto, en, es, pt, or de.", arg)
         )
     end
 
@@ -716,21 +727,25 @@ local function handle_language_command(caller_name, param)
         return true, amenaza_core.localize(caller_name, S("Language set to Spanish."))
     elseif arg == "en" then
         return true, amenaza_core.localize(caller_name, S("Language set to English."))
+    elseif arg == "pt" then
+        return true, amenaza_core.localize(caller_name, S("Language set to Portuguese."))
+    elseif arg == "de" then
+        return true, amenaza_core.localize(caller_name, S("Language set to German."))
     else
         return true, amenaza_core.localize(caller_name, S("Language set to automatic (client locale)."))
     end
 end
 
 minetest.register_chatcommand("idioma", {
-    params = "[auto|es|en]",
-    description = S("Change game language (auto, es, en)"),
+    params = "[auto|en|es|pt|de]",
+    description = S("Change game language (auto, en, es, pt, de)"),
     privs = {},
     func = handle_language_command,
 })
 
 minetest.register_chatcommand("lang", {
-    params = "[auto|es|en]",
-    description = S("Change game language (auto, es, en)"),
+    params = "[auto|en|es|pt|de]",
+    description = S("Change game language (auto, en, es, pt, de)"),
     privs = {},
     func = handle_language_command,
 })
